@@ -10,6 +10,8 @@ const Notification = (req, res) => {
   if (req.method == 'POST') {
     const { subscription } = req.body
 
+    console.log(subscription)
+
     webPush
       .sendNotification(
         subscription,
